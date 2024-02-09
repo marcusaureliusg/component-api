@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "node", // Changed from "bundler" to "node"
+    "skipLibCheck": true,
+    "types": ["node"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "declaration": true, // Generate .d.ts files
+    "outDir": "./dist", // Specify an output directory for tsc
+    "noEmit": false // Set to false to enable emitting files with tsc
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "storybook-static"] // Exclude certain directories
+}
